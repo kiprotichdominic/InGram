@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
     #Third Party Appa
     "rest_framework",
+    'rest_framework.authtoken', 
     
     #Local
     'projects.apps.ProjectsConfig',
