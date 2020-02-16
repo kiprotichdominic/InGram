@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    #Third Party Appa
+    "rest_framework",
+    
     #Local
     'projects.apps.ProjectsConfig',
 ]
@@ -126,3 +129,10 @@ STATIC_URL = '/static/'
 #Media root
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'   
+
+
+REST_FRAMEWORK = {
+'DEFAULT_PERMISSION_CLASSES': [
+'rest_framework.permissions.AllowAny',
+]
+}
