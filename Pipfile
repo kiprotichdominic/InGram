@@ -14,6 +14,8 @@ django-allauth = "*"
 requests = "*"
 gunicorn = "*"
 whitenoise = "*"
+markdown = "*"
+django-filter = "*"
 
 [requires]
 python_version = "3.7"
