@@ -10,3 +10,7 @@ class SignUpView(generic.CreateView):
     form_class = UserRegisterForm
     success_url = reverse_lazy('login')
     template_name = 'users/signup.html'
+    
+
+class ProfileView(generic.TemplateView):
+    template_name = 'users/profile.html'
