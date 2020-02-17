@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.account', 
     'allauth.socialaccount', 
     'rest_auth.registration', 
+    'crispy_forms',
     
     #Local
     'projects.apps.ProjectsConfig',
@@ -156,3 +157,9 @@ REST_FRAMEWORK = {
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
 SITE_ID = 1 
+
+#Redirect on succesful login
+LOGIN_REDIRECT_URL = 'home'
+LOGIN_URL='login'
+LOGOUT_REDIRECT_URL ='login'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
