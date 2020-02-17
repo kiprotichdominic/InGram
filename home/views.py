@@ -8,7 +8,7 @@ class HomePageView(TemplateView):
     
     
 def home(request):
-    url = 'https://blogapi001.herokuapp.com/api/v1/?format=json'
+    url = 'http://127.0.0.1:8000/api/v1/?format=json'
     response = requests.get(url)
     data = response.json()
     print(data)
@@ -22,3 +22,4 @@ class GetPosts(TemplateView):
             'posts' : get_posts
         }
         return context
+    

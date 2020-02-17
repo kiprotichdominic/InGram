@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     #Local
     'projects.apps.ProjectsConfig',
     'home.apps.HomeConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
