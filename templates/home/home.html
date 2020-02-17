@@ -3,24 +3,18 @@
 <div class="d-flex justify-content-center flex-wrap mb-5 pt-4">
   {% for post in posts %}
 <div class="row">
-    <div class="row m-3">
-      <div class="col-md-5">
-        <div class="card">
-          <div class="card-image">
-            <img src="{{ post.image }}">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
+  <div class="col-md-5 m-3">
+    <div class="card" style="width: 300px;">
+      <img src="{{post.image}}" alt="" width="300px" height="300px" id="images">
+      <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text">{{post.body}}</p>
+        <p class="card-text">{{post.create_at}}</p>
+        <a href="{{post.link}}" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
+</div>
 {% endfor %}
 </div>
 {% endblock content %}
