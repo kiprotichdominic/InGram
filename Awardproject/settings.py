@@ -161,5 +161,5 @@ SITE_ID = 1
 #Redirect on succesful login
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL='login'
-LOGOUT_REDIRECT_URL ='login'
+LOGOUT_REDIRECT_URL ='home'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
