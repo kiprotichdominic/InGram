@@ -11,6 +11,9 @@ pillow = "*"
 djangorestframework = "*"
 django-rest-auth = "*"
 django-allauth = "*"
+requests = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"
