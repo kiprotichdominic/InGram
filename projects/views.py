@@ -1,7 +1,7 @@
 from rest_framework import generics
 from .models import Post
 from .permissions import IsAuthorOrReadOnly
-from .serializers import ProjectSerializer
+from .serializers import ProjectSerializer, UserSerializer
 
 
 class ProjectList(generics.ListCreateAPIView):
