@@ -7,7 +7,7 @@ class Post(models.Model):
     image = models.ImageField(upload_to="images/")
     title = models.CharField(max_length=50)
     body = models.TextField()
-    link = models.CharField(max_length=200)
+    link = models.URLField(max_length=128,db_index=True,unique=True,blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     

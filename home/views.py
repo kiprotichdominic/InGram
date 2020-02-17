@@ -16,7 +16,7 @@ import requests
 #     return render(request, 'home/home.html', context)
 
 class GetPosts(TemplateView):
-    template_name = 'home/home3.html'
+    template_name = 'home/home.html'
     def get_context_data(self, *args, **kwargs):
         context = {
             'posts' : get_posts

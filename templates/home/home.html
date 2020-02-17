@@ -1,4 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>Test</h1>
+<div class="d-flex justify-content-center flex-wrap mb-5 pt-4">
+  {% for post in posts %}
+<div class="row">
+    <div class="row m-3">
+      <div class="col-md-5">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ post.image }}">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
 {% endblock content %}

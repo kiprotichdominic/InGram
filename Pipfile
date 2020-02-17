@@ -17,6 +17,7 @@ whitenoise = "*"
 markdown = "*"
 django-filter = "*"
 django-crispy-forms = "*"
+crispy-forms-materialize = "*"
 
 [requires]
 python_version = "3.7"
