@@ -6,7 +6,7 @@ class ProjectSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Post
-        fields = ('image','author', 'title', 'body', 'created_at',)
+        fields = ('image','author', 'title', 'body', 'created_at','link',)
         
         
 class UserSerializer(serializers.ModelSerializer):
