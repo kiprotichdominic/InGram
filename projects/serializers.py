@@ -6,11 +6,11 @@ class ProjectSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Post
-        fields = ('id', 'image','author', 'title', 'body', 'created_at',)
+        fields = ('image','author', 'title', 'body', 'created_at',)
         
         
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
-        fields = ('id', 'username',)   
+        fields = ('username',)   
         

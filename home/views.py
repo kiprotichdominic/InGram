@@ -1,5 +1,7 @@
 from django.views.generic import TemplateView, ListView
+from django.views.generic.edit import CreateView
 from django.shortcuts import render
+from projects.models import Post
 from .services import get_posts
 import requests
 
@@ -22,4 +24,10 @@ class GetPosts(TemplateView):
             'posts' : get_posts
         }
         return context
+    
+class ProjectCreateView(CreateView):
+    model = Post
+    template_name = 'home/post.html'
+    fields = ('image','title','body','link')
+    
     
