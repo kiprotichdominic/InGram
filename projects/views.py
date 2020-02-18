@@ -4,6 +4,7 @@ from .models import Post
 from .forms import PostForm
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
+# from django.views.generic import DetailView
 from .permissions import IsAuthorOrReadOnly
 from .serializers import ProjectSerializer, UserSerializer
 
@@ -26,3 +27,8 @@ class ProjectCreateView(CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+    
+
+# class ProjectDetailView(DetailView):
+#     model = Post
+

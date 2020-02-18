@@ -5,9 +5,7 @@ from django.conf import settings
 from .views import GetPosts
 
 urlpatterns = [
-    # path("", HomePageView.as_view(), name="home"),
     path("", GetPosts.as_view(), name="home"),
-    # path('home/', views.home, name='home2'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

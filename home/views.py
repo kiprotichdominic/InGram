@@ -1,21 +1,9 @@
-from django.views.generic import TemplateView, ListView
-from django.views.generic.edit import CreateView
+from django.views.generic import TemplateView, ListView, DetailView
 from django.shortcuts import render
 from projects.models import Post
 from .services import get_posts
 import requests
 
-# class HomePageView(TemplateView):
-#     template_name = "home/home.html"
-    
-    
-# def home(request):
-#     url = 'http://127.0.0.1:8000/api/v1/?format=json'
-#     response = requests.get(url)
-#     data = response.json()
-#     print(data)
-#     context ={"data":data}
-#     return render(request, 'home/home.html', context)
 
 class GetPosts(TemplateView):
     template_name = 'home/home.html'
@@ -25,9 +13,9 @@ class GetPosts(TemplateView):
         }
         return context
     
-class ProjectCreateView(CreateView):
-    model = Post
-    template_name = 'home/post.html'
-    fields = ('image','title','body','link')
+    
+
+    
+
     
     
