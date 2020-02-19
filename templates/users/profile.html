@@ -1,15 +1,17 @@
-{% extends "base.html" %}
-{% load crispy_forms_tags %}
-{% block content %}
+{% extends "base.html" %} {% load crispy_forms_tags %} {% block content %}
 <div class="container">
-    <div class="profile-card-1 mt-4">
-        <div class="img"><img src="{{ user.profile.image.url }}"/></div><a class="view-more" href=""><i class="fa fa-plus-circle" aria-hidden="true"></i>
-          <div class="popup"></div></a>
-        <div class="mid-section">
-          <div class="name">{{user.username}}</div>
-          <div class="description">Email: {{user.email}}</div>
-          <div class="line"></div>
-        </div>
-      </div>
+  
+  <div class="profile-card-1 mt-4">
+    <div class="img"><img src="{{ user.profile.image.url }}" /></div>
+    <a class="view-more" href=""
+      ><i class="fa fa-plus-circle" aria-hidden="true"></i>
+      <div class="popup"></div
+    ></a>
+    <div class="mid-section">
+      <div class="name">{{user.username}}</div>
+      <div class="description">Email: {{user.email}}</div>
+      <div class="line"></div>
+    </div>
+  </div>
 </div>
 {% endblock content %}
