@@ -45,11 +45,11 @@
     
     
        pip install -r requirements.txt
-4. On your terminal,Create database awwards using the command below.
+4. On your terminal,Create database db_name using the command below.
 
 
-       CREATE DATABASE awwards; 
-       **if you opt to use your own database name, replace awwards your preferred name, then also update settings.py variable DATABASES > NAME
+       CREATE DATABASE db_name; 
+       **if you opt to use your own database name, replace db_name your preferred name, then also update settings.py variable DATABASES > NAME
 
 5. Migrate the database using the command below
 
